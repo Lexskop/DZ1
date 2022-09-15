@@ -43,4 +43,3 @@ if (value == 3)
 {
     Console.WriteLine("Проверь меня еще раз :)");
 }
-Console.WriteLine($"{value}");
