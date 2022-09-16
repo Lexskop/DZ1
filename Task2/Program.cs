@@ -6,6 +6,9 @@
 */
 
 Console.WriteLine("Приветствую Вас! Эта программа поможет сравнить три числа и покажет в результате максимальное из этих чисел.");
+int userChoice = 1;
+while (userChoice == 1)
+{
 Console.WriteLine("Введите первое число: ");
 int userNumber1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
@@ -41,5 +44,8 @@ if (value == 2)
 }
 if (value == 3)
 {
-    Console.WriteLine("Проверь меня еще раз :)");
+    Console.WriteLine("Надежно как Швейцарские часы!");
+}
+Console.WriteLine("Проверим три других числа? 1 - Да, 0 - Нет");
+userChoice = Convert.ToInt32(Console.ReadLine());
 }

@@ -6,6 +6,9 @@ a = -9 b = -3 -> max = -3
 */
 
 Console.WriteLine("Приветствую Вас! Эта программа поможет сравнить два числа и покажет, какое из них больше.");
+int userChoice = 1;
+while (userChoice == 1)
+{
 Console.WriteLine("Введите первое число: ");
 int userNumber1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
@@ -25,4 +28,26 @@ else
     {
         Console.WriteLine($"a = {userNumber1}; b = {userNumber2} -> a = b; Они равны");
     }
+}
+
+Random rnd = new Random();
+int value = rnd.Next(0, 4);
+if (value == 0)
+{
+    Console.WriteLine("Отличный результат!");
+}
+if (value == 1)
+{
+    Console.WriteLine("Это было не так уж и сложно!");
+}
+if (value == 2)
+{
+    Console.WriteLine("Мы справились!");
+}
+if (value == 3)
+{
+    Console.WriteLine("Надежно как Швейцарские часы!");
+}
+Console.WriteLine("Проверим два других числа? 1 - Да, 0 - Нет");
+userChoice = Convert.ToInt32(Console.ReadLine());
 }
